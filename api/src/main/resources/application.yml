@@ -1,0 +1,15 @@
+
+spring:
+  datasource:
+    url: jdbc:postgresql://postgresdb:5432/inventory_manager?createDatabaseIfNotExist=true
+    username: inventory_manager_user
+    password: password
+    driver-class-name: org.postgresql.Driver
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8180/auth/realms/inventory_manager
+
+
+
